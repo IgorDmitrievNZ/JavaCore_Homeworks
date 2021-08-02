@@ -37,6 +37,20 @@ public class Main {
         System.out.println(orangeBox.getWeight());
 
         System.out.println(appleBox.compare(orangeBox));
+
+
+        System.out.println("Apple box before transfer: " + appleBox.toString());
+        Box box3 = new Box();
+        System.out.println("New box before transfer: " + box3.toString());
+        appleBox.transfer(box3);
+        System.out.println("Apple box after transfer: " + appleBox.toString());
+        System.out.println("New box after transfer: " + box3.toString());
+
+        System.out.println("Orange box before it was added new orange: " + orangeBox.toString());
+        orangeBox.add(orange2);
+        System.out.println("Orange box after new orange was added: " + orangeBox.toString());
+        System.out.println("New weight of orange box is " + orangeBox.getWeight());
+
     }
 
     public static <T> void swap(T[] arr, int i, int j) {
@@ -53,5 +67,4 @@ public class Main {
         }
         return list;
     }
-
 }
