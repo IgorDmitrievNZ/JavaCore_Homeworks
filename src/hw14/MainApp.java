@@ -17,19 +17,19 @@ public class MainApp {
 
 
     public static boolean checkArray(ArrayList<Integer> array, int a, int b) {
-        boolean Val1 = false;
-        boolean Val2 = false;
+        boolean val1 = false;
+        boolean val2 = false;
 
         for (int i : array) {
             if (i == a)
-                Val1 = true;
+                val1 = true;
             else if (i == b)
-                Val2 = true;
+                val2 = true;
             else
                 return false;
         }
 
-        return Val1 && Val2;
+        return val1 && val2;
     }
 
 }
